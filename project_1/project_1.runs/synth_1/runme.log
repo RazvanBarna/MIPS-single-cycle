@@ -1,0 +1,368 @@
+
+*** Running vivado
+    with args -log testEnv.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source testEnv.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Fri Apr 11 09:16:20 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source testEnv.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 531.707 ; gain = 200.020
+Command: read_checkpoint -auto_incremental -incremental {C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/utils_1/imports/synth_1/ssd.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/utils_1/imports/synth_1/ssd.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top testEnv -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17564
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1383.863 ; gain = 448.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'testEnv' [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/testEnv.vhd:14]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/imports/Downloads/MPGG.vhd:6' bound to instance 'MPGEn' of component 'MPG' [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/testEnv.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'MPG' [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/imports/Downloads/MPGG.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (0#1) [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/imports/Downloads/MPGG.vhd:12]
+INFO: [Synth 8-3491] module 'IFetch' declared at 'C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/IFetch.vhd:6' bound to instance 'Fetch' of component 'IFetch' [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/testEnv.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'IFetch' [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/IFetch.vhd:12]
+INFO: [Synth 8-3491] module 'RomInstructions1' declared at 'C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/RomInstructions1.vhd:6' bound to instance 'C1' of component 'RomInstructions1' [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/IFetch.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'RomInstructions1' [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/RomInstructions1.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'RomInstructions1' (0#1) [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/RomInstructions1.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'IFetch' (0#1) [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/IFetch.vhd:12]
+INFO: [Synth 8-3491] module 'ID' declared at 'C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/ID.vhd:6' bound to instance 'IDComp' of component 'ID' [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/testEnv.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'ID' [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/ID.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ID' (0#1) [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/ID.vhd:15]
+INFO: [Synth 8-3491] module 'Execution' declared at 'C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/Execution.vhd:6' bound to instance 'EXComp' of component 'Execution' [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/testEnv.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'Execution' [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/Execution.vhd:16]
+INFO: [Synth 8-226] default block is never used [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/Execution.vhd:49]
+WARNING: [Synth 8-614] signal 'RD1' is read in the process but is not in the sensitivity list [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/Execution.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Execution' (0#1) [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/Execution.vhd:16]
+INFO: [Synth 8-3491] module 'Mem' declared at 'C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/Mem.vhd:5' bound to instance 'MemComp' of component 'Mem' [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/testEnv.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'Mem' [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/Mem.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Mem' (0#1) [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/Mem.vhd:11]
+INFO: [Synth 8-3491] module 'ssd' declared at 'C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/imports/new/Ssd.vhd:5' bound to instance 'SsdComp' of component 'ssd' [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/testEnv.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'ssd' [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/imports/new/Ssd.vhd:12]
+WARNING: [Synth 8-614] signal 'digits' is read in the process but is not in the sensitivity list [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/imports/new/Ssd.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'ssd' (0#1) [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/imports/new/Ssd.vhd:12]
+INFO: [Synth 8-3491] module 'UC' declared at 'C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/UC.vhd:6' bound to instance 'UCComp' of component 'UC' [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/testEnv.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'UC' [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/UC.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'UC' (0#1) [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/UC.vhd:12]
+INFO: [Synth 8-226] default block is never used [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/testEnv.vhd:95]
+INFO: [Synth 8-256] done synthesizing module 'testEnv' (0#1) [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/sources_1/new/testEnv.vhd:14]
+WARNING: [Synth 8-7129] Port clk in module RomInstructions1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1495.461 ; gain = 560.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1495.461 ; gain = 560.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1495.461 ; gain = 560.176
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1495.461 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp6'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:209]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:209]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp6'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:210]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:210]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp14'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:212]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:212]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp14'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:213]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:213]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp7'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:215]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:215]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp7'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:216]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:216]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp15'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:218]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:218]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp15'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:219]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:219]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn6'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:221]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:221]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn6'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:222]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:222]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn14'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:224]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:224]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn14'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:225]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:225]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn7'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:227]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:227]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn7'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:228]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:228]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn15'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:230]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:230]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn15'. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:231]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:231]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/testEnv_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/testEnv_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1577.098 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1577.098 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1577.098 ; gain = 641.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1577.098 ; gain = 641.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1577.098 ; gain = 641.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1577.098 ; gain = 641.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	               2K Bit	(64 X 32 bit)          RAMs := 1     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	  33 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 4     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 4     
+	   9 Input    2 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1577.098 ; gain = 641.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+---------------+-----------+----------------------+----------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives     | 
++------------+---------------+-----------+----------------------+----------------+
+|testEnv     | MemComp/m_reg | Implied   | 64 x 32              | RAM64X1S x 32  | 
+|testEnv     | IDComp/m_reg  | Implied   | 32 x 32              | RAM32M x 12    | 
++------------+---------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1577.098 ; gain = 641.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1577.098 ; gain = 641.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+---------------+-----------+----------------------+----------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives     | 
++------------+---------------+-----------+----------------------+----------------+
+|testEnv     | MemComp/m_reg | Implied   | 64 x 32              | RAM64X1S x 32  | 
+|testEnv     | IDComp/m_reg  | Implied   | 32 x 32              | RAM32M x 12    | 
++------------+---------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1577.098 ; gain = 641.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1577.098 ; gain = 641.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1577.098 ; gain = 641.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1577.098 ; gain = 641.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1577.098 ; gain = 641.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1577.098 ; gain = 641.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1577.098 ; gain = 641.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    46|
+|3     |LUT1     |     3|
+|4     |LUT2     |    13|
+|5     |LUT3     |    77|
+|6     |LUT4     |    48|
+|7     |LUT5     |   127|
+|8     |LUT6     |   133|
+|9     |MUXF7    |    64|
+|10    |MUXF8    |    16|
+|11    |RAM32M   |    10|
+|12    |RAM32X1D |     4|
+|13    |RAM64X1S |    32|
+|14    |FDCE     |    30|
+|15    |FDRE     |    38|
+|16    |IBUF     |     7|
+|17    |OBUF     |    25|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1577.098 ; gain = 641.812
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1577.098 ; gain = 560.176
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1577.098 ; gain = 641.812
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1577.098 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 172 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1577.098 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 46 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+Synth Design complete | Checksum: 31eec225
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 22 Warnings, 18 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1577.098 ; gain = 1040.711
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1577.098 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Facultate/An 2/Semestrul 2/AC/Labs/MipsCicluUnic/project_1/project_1.runs/synth_1/testEnv.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file testEnv_utilization_synth.rpt -pb testEnv_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 11 09:17:00 2025...
